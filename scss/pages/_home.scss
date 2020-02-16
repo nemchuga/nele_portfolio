@@ -1,0 +1,165 @@
+.hero{
+    margin-bottom: 1em;
+  @include media-breakpoint-up(md){
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+
+    }
+}
+
+.first{
+  background-color: $green;
+  position: relative;
+
+  @include media-breakpoint-up(md){
+    border-radius: 25px;
+  }
+
+}
+.hero-title{
+
+  padding: 1em 0;
+  padding-bottom: 2em;
+  padding-right: .5em;
+  font-size: 2.5rem;
+  @include media-breakpoint-up(md){
+
+    font-size: 3rem;
+    padding-bottom: 2em;
+  }
+  @include media-breakpoint-up(lg){
+    transform: translateX(-.75em);
+    padding-top: .5em;
+    padding-bottom: 2.5em;
+  }
+}
+
+.hero-img{
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -2em;
+    left: 1em;
+    z-index: 200;
+    @include media-breakpoint-down(sm){
+
+      max-width: 200px;
+
+      max-height: 350px;
+    }
+    @include media-breakpoint-up(md){
+      width: 22vw;
+      max-width: 300px;
+      height: 32vw;
+      max-height: 450px;
+      left: .5em;
+      top: .5em;
+    }
+
+}
+
+.lead{
+
+    padding: 1em 0.25em;
+    @include media-breakpoint-down(md){
+      padding: 2em 0.25em;
+    }
+    @include media-breakpoint-down(sm){
+      margin-top: 12em;
+      padding-bottom: 0;
+    }
+    @include media-breakpoint-up(lg){
+      transform: translateX(-2em);
+      font-size: 1.2rem;
+    }
+}
+.linija{
+  padding: 2em;
+}
+.icons{
+
+  i{
+    padding: .4em .3em;
+  }
+}
+.btn{
+  padding: .7em 2.2em;
+}
+
+
+/*--------about & work section---------*/
+.about{
+  @include media-breakpoint-up(sm){
+  background-color: $gray;
+  }
+}
+.about-title{
+  background-image: url("../img/about.jpg");
+  opacity: .7;
+  transition: opacity .5s;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.work-title{
+  background-image: url("../img/work.jpg");
+  opacity: .7;
+  transition: opacity .5s;
+  &:hover{
+    opacity: 1;
+  }
+}
+.about-title, .work-title{
+  background-size: cover;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  min-height: 80vw;
+  @include media-breakpoint-up(md){
+    min-height: 45vw;
+  }
+}
+.work-text, .about-text{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.about-text, .work-text{
+   h4{
+  font-weight: bold;
+  margin: 1em 0;
+  @include media-breakpoint-up(sm){
+    margin: .4em 0;
+  }
+    }
+}
+.about-text h4{
+  margin-left: -.1em;
+  @include media-breakpoint-up(lg){
+    margin-left: 0;
+  }
+}
+.info{
+  border-right: 2px solid black;
+}
+.info, .information{
+  padding: .3em 1em;
+}
+
+.radovi{
+  position: relative;
+}
+.rad{
+  margin-bottom: 2em;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  @include media-breakpoint-up(md){
+    position: absolute;
+    top: -3em;
+    z-index: 100;
+    margin-right: .8em;
+  }
+
+}
+.card-body{
+  background-color: $white;
+  padding: 1em 1em;
+}

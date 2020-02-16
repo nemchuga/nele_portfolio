@@ -1,0 +1,34 @@
+.contact{
+
+  h2{
+    color: $blue;
+    text-align: center;
+  }
+  padding-bottom: 20vh;
+  margin-bottom: 1em;
+
+  @include media-breakpoint-up(md){
+    padding-top: 10vh;
+
+    }
+  input, textarea{
+    display: block;
+    padding: .5em;
+    width: 100%;
+  }
+  label{
+    display: block;
+    margin-top: 1em;
+    color: $blue;
+  }
+  .btn{
+    width: 35%;
+    float: right;
+    margin-top: 1em;
+    font-size: 1.5rem;
+    color: $white;
+  }
+  textarea{
+    height: 150px;
+  }
+}

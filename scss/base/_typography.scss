@@ -1,0 +1,45 @@
+body{
+  font-family: $sans;
+  font-size: 1.2rem;
+  color: $blue;
+  background-color: $white;
+}
+.navbar-brand{
+  font-size: 2rem;
+}
+.nav-item{
+  text-transform: uppercase;
+  @include media-breakpoint-up(md){
+    margin-left: 1.8em;
+  }
+}
+h1, h2, h3{
+  color: $white;
+  font-family: $bold;
+
+}
+.icons{
+  font-size: 1.6rem;
+}
+.hero-title{
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+.lead, footer{
+  font-size: 1rem;
+  @include media-breakpoint-up(md){
+    font-size: 1.1rem;
+  }
+}
+.about-title, .work-title{
+
+  letter-spacing: 1.2rem;
+}
+.info, .information, .opis-radova{
+
+  font-size: .8rem;
+  @include media-breakpoint-up(lg){
+    font-size: 1rem;
+  }
+
+}

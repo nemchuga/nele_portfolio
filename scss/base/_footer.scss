@@ -1,0 +1,24 @@
+footer{
+  padding: 1.5em 0;
+  background-color: $gray;
+  text-align: center;
+  @include media-breakpoint-up(md){
+    text-align: left;
+  }
+}
+
+.linkovi{
+  @include media-breakpoint-up(md){
+    text-align: right;
+  }
+}
+
+.link:not(:first-of-type)::before{
+  content: '/';
+  display: inline-block;
+}
+
+.link a{
+  display: inline-block;
+  margin: 0 .7em;
+}

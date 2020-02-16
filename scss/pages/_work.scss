@@ -1,0 +1,63 @@
+.work-cont{
+  padding-bottom: 10vh;
+  margin-bottom: 1em;
+
+  @include media-breakpoint-up(md){
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    }
+  @include media-breakpoint-down(sm){
+      text-align: center;
+
+    }
+  h2{
+    padding: .5em 0;
+    color: $blue;
+    }
+  h3{
+    color: $white;
+  }
+}
+.work-cont .card{
+    border: none;
+    h3{
+      color: $blue;
+    }
+    .card-header, .card-text, .card-footer{
+      opacity: 0;
+    }
+    &:hover{
+      .card-header, .card-text, .card-footer{
+        opacity: 1;
+      }
+      .card-title{
+        opacity: 0;
+      }
+    }
+}
+.card-telo{
+  position: relative;
+  padding: 3.5em 1em;
+  .card-text{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    right: .5em;
+  }
+}
+.card-header{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.kartica1{
+  background-color: $orange;
+}
+.kartica2{
+  background-color: $red;
+}
+.kartica3{
+  background-color: #44bd32;
+}
+.kartica4{
+  background-color: #3498db;
+}
