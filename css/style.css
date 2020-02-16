@@ -10246,11 +10246,32 @@ footer {
 }
 .contact .btn {
   width: 35%;
-  float: right;
   margin-top: 1em;
   font-size: 1.5rem;
-  color: #f5f6fa;
 }
 .contact textarea {
   height: 150px;
+}
+
+.okvir {
+  position: relative;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.reminder {
+  background-color: #27ae60;
+  border-radius: 15px;
+  padding: 0.2em 0.5em;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  bottom: -2em;
+}
+@media (min-width: 992px) {
+  .reminder {
+    width: 50%;
+  }
 }

@@ -23,12 +23,30 @@
   }
   .btn{
     width: 35%;
-    float: right;
     margin-top: 1em;
     font-size: 1.5rem;
-    color: $white;
+
   }
   textarea{
     height: 150px;
+  }
+}
+.okvir{
+  position: relative;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.reminder{
+  background-color: $green;
+  border-radius: 15px;
+  padding: .2em .5em;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  bottom: -2em;
+  @include media-breakpoint-up(lg){
+    width: 50%;
   }
 }
