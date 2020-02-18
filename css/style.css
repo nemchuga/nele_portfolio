@@ -10132,6 +10132,27 @@ footer {
   padding: 1em 1em;
 }
 
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #f5f6fa;
+  }
+  49% {
+    color: #f5f6fa;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #f5f6fa;
+  }
+}
 .parallax {
   display: none;
 }
